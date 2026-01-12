@@ -6,3 +6,4 @@ def presntardatos(calculadoraModell):
 
 def mostraResultado(operacion, resultado):
     print(f"\nResultado de la {operacion}: {resultado}")
+    

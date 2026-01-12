@@ -11,3 +11,9 @@ class calculadoraModell:
     #self = this
     def sumar(self):
         return self.datoa + self.datob
+    def restar(self):
+        return self.datoa - self.datob
+    def dividir(self):
+        return self.datoa / self.datob
+    def multiplicar(self):
+        return self.datoa * self.datob            

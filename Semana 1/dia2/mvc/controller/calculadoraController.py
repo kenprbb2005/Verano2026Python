@@ -25,6 +25,19 @@ class calculadoraController:
             resultado = calculadoraModell.sumar(_calculadoraModell)
             _calculadoraView.mostraResultado("suma", resultado)
 
+        elif opcion == 2:            
+            resultado = calculadoraModell.restar(_calculadoraModell)
+            _calculadoraView.mostraResultado("resta", resultado)
+
+        elif opcion == 3:            
+            resultado = calculadoraModell.dividir(_calculadoraModell)
+            _calculadoraView.mostraResultado("dividir", resultado)
+
+        elif opcion == 4:            
+            resultado = calculadoraModell.multiplicar(_calculadoraModell)
+            _calculadoraView.mostraResultado("multiplicar", resultado)
+
+
         else:
             print("Opcion invalida")    
 

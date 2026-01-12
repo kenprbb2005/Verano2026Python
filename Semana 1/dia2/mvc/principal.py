@@ -7,9 +7,26 @@
 
 #llamar el controlador, 
 from controller.calculadoraController import calculadoraController
+from controller.personaController import personaController
 
 def principal():
 #pasar parametros
+
+    print("Registro de persona")
+    nombre = input("Ingresa el nombre: ")
+    edad = input("Ingresa la edad: ")
+    genero = input("Ingrese el genero: ")
+
+    _personaController = personaController()
+    _personaModel = _personaController.crearPersona(nombre, edad, genero)
+
+    _personaController.mostrarDatos(_personaModel)
+
+
+
+
+
+
     datoa = int(input("Ingresa el datoa: "))
     datob = int(input("Ingresa el datob: "))
 
@@ -21,8 +38,12 @@ def principal():
 
     print("\n=== Operaciones en MVC===")
     print("1. Sumar")
+    print("2. Restar")
+    print("3. Dividir")
+    print("4. Multiplicar")
 
-    opcion = int(input("Seleccione una operacion (1--#)"))
+
+    opcion = int(input("Seleccione una operacion (1--4)"))
 
     _calculadoraController.operaciones(modelo_calculadoraModell, opcion)
 
